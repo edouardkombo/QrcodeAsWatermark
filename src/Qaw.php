@@ -242,7 +242,7 @@ class Qaw {
             
             if ($this->recoveryFolder !== "") {
                 $newFilePath             =   $this->recoveryFolder . '/' . $val;            
-                $newPictureName          =   str_replace($this->outputFileExtension, '_DONE' . $this->outputFileExtension , $newFilePath);
+                $newPictureName          =   str_replace($this->outputFileExtension, '_DONE_' . time() . $this->outputFileExtension , $newFilePath);
                 $currentImageFilename    =   $this->picturesFolder . '/' . $val;
 
                 if (!is_dir($this->recoveryFolder)) {
